@@ -36,6 +36,8 @@ FROM power_data;
 ```
 Resultado: 1.09 kW
 
+![Histograma](figs/hist_global_active_power.png)
+
 
 Consulta 2: Promedio de voltaje agrupado por día
 ```sql
@@ -58,6 +60,9 @@ Resultado:
 8  1/11/2007   240.938403
 9  1/11/2008   241.810236
 
+![Consumo por hora](figs/line_global_active_power_by_hour.png)
+
+
 Consulta 3: Top 5 horas con mayor consumo promedio en Sub_metering_1
 ```sql
 SELECT Time, AVG(Sub_metering_1) AS avg_sub1
@@ -73,3 +78,5 @@ Resultado:
 2  20:43:00  3.373362
 3  20:49:00  3.340611
 4  20:50:00  3.338428
+
+![Sub-meterings promedio](figs/bar_sub_meterings_mean.png)
